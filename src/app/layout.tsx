@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Space_Grotesk } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   title: "SOS Pool LLC | Pool Cleaning Service",
   description:
     "Professional pool cleaning, balancing, and maintenance plans for homes and vacation properties.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#1e98a7",
 };
 
 export default function RootLayout({
@@ -64,6 +71,13 @@ export default function RootLayout({
               </Link>
             </nav>
           </div>
+
+          <nav className="mobile-nav site-container" aria-label="Mobile Navigation">
+            <Link href="/services">Services</Link>
+            <Link href="/about">About</Link>
+            <Link href="/booking">Book</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
         </header>
 
         {children}
@@ -74,6 +88,15 @@ export default function RootLayout({
             <p>Clean water. Reliable service. Zero guesswork.</p>
           </div>
         </footer>
+
+        <div className="mobile-sticky-cta" aria-label="Quick actions">
+          <a href="tel:+17543162012" className="mobile-call-btn">
+            Call Now
+          </a>
+          <Link href="/booking" className="mobile-book-btn">
+            Book Service
+          </Link>
+        </div>
       </body>
     </html>
   );
