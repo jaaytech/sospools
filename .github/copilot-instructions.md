@@ -1,0 +1,13 @@
+- [x] Verify that the copilot-instructions.md file in the .github directory is created.
+- [x] Clarify Project Requirements.
+- [x] Scaffold the Project.
+- [x] Customize the Project.
+- [x] Install Required Extensions. No extensions were required by setup info.
+- [x] Compile the Project. `npm run lint` and `npm run build` passed.
+- [x] Create and Run Task. Skipped because npm scripts already exist and run directly.
+- [ ] Launch the Project. Awaiting your confirmation to run debug/launch mode.
+- [x] Ensure Documentation is Complete. README and this file are present and updated.
+
+- Work through each checklist item systematically.
+- Keep communication concise and focused.
+- Follow development best practices.
