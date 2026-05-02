@@ -42,7 +42,9 @@ export default function RootLayout({
                 className="brand-logo"
                 priority
               />
-              <span className="brand-text">SOS Pool LLC</span>
+              <span className="brand-text">
+                <span className="sos-highlight">SOS</span> Pool LLC
+              </span>
             </Link>
             <nav className="main-nav" aria-label="Main Navigation">
               <Link href="/services">Services</Link>

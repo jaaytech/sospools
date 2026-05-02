@@ -44,8 +44,27 @@ export default function Home() {
     },
   ];
 
+  const bannerItems = ["Licensed & Insured", "Same-Week Availability", "Weekly Service Plans"];
+
   return (
     <main>
+      <section className="promo-banner">
+        <div className="site-container promo-banner-inner reveal-up">
+          <p className="promo-eyebrow">Spring Pool Ready Offer</p>
+          <h2 className="promo-title">Book now and get your first chemistry report free.</h2>
+          <div className="promo-items">
+            {bannerItems.map((item) => (
+              <span key={item} className="promo-item">
+                {item}
+              </span>
+            ))}
+          </div>
+          <Link href="/booking" className="btn btn-accent">
+            Claim This Offer
+          </Link>
+        </div>
+      </section>
+
       <section className="hero">
         <div className="site-container hero-grid">
           <div className="space-y-5 reveal-up">
@@ -53,7 +72,7 @@ export default function Home() {
               SOS Pool LLC | Trusted Local Pool Care
             </p>
             <h1 className="section-title text-balance">
-              A cleaner, safer pool every week without the stress.
+              <span className="sos-highlight">SOS</span> keeps your pool cleaner, safer, and guest-ready every week.
             </h1>
             <p className="max-w-2xl text-[1.05rem] leading-7 text-[#35515f]">
               We handle cleaning, balancing, and maintenance so your pool stays crystal-clear for family days and guest check-ins.
@@ -95,6 +114,10 @@ export default function Home() {
             <p className="mt-4 rounded-xl bg-[#f2fbfa] p-3 text-sm text-[#2e5969]">
               Fast response for green water, storms, and urgent chemistry corrections.
             </p>
+            <div className="clarity-meter" aria-label="Water Clarity Meter">
+              <div className="clarity-fill" />
+              <span>Water Clarity Target: 98%</span>
+            </div>
           </aside>
         </div>
       </section>
