@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Space_Grotesk } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
@@ -32,8 +33,16 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <header className="site-header">
           <div className="site-container nav-inner">
-            <Link className="brand" href="/">
-              SOS Pool LLC
+            <Link className="brand" href="/" aria-label="SOS Pool LLC Home">
+              <Image
+                src="/sos-logo.svg"
+                alt="SOS Pools logo"
+                width={58}
+                height={58}
+                className="brand-logo"
+                priority
+              />
+              <span className="brand-text">SOS Pool LLC</span>
             </Link>
             <nav className="main-nav" aria-label="Main Navigation">
               <Link href="/services">Services</Link>
