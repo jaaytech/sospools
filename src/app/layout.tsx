@@ -31,6 +31,14 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <div className="top-strip">
+          <div className="site-container top-strip-inner">
+            <p>+1 (754) 316-2012</p>
+            <p>sospoolfullservice@gmail.com</p>
+            <p>Mon - Fri 9AM - 6PM</p>
+          </div>
+        </div>
+
         <header className="site-header">
           <div className="site-container nav-inner">
             <Link className="brand" href="/" aria-label="SOS Pool LLC Home">
@@ -51,6 +59,9 @@ export default function RootLayout({
               <Link href="/about">About</Link>
               <Link href="/booking">Booking Request</Link>
               <Link href="/contact">Contact</Link>
+              <Link href="/booking" className="nav-quote-btn">
+                Request A Quote
+              </Link>
             </nav>
           </div>
         </header>

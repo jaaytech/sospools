@@ -44,80 +44,46 @@ export default function Home() {
     },
   ];
 
-  const bannerItems = ["Licensed & Insured", "Same-Week Availability", "Weekly Service Plans"];
-
   return (
     <main>
-      <section className="promo-banner">
-        <div className="site-container promo-banner-inner reveal-up">
-          <p className="promo-eyebrow">Spring Pool Ready Offer</p>
-          <h2 className="promo-title">Book now and get your first chemistry report free.</h2>
-          <div className="promo-items">
-            {bannerItems.map((item) => (
-              <span key={item} className="promo-item">
-                {item}
-              </span>
-            ))}
-          </div>
-          <Link href="/booking" className="btn btn-accent">
-            Claim This Offer
-          </Link>
-        </div>
-      </section>
-
-      <section className="hero">
-        <div className="site-container hero-grid">
-          <div className="space-y-5 reveal-up">
-            <p className="pill">
-              SOS Pool LLC | Trusted Local Pool Care
-            </p>
-            <h1 className="section-title text-balance">
-              <span className="sos-highlight">SOS</span> keeps your pool cleaner, safer, and guest-ready every week.
+      <section className="hero-hd">
+        <div className="site-container hero-hd-content">
+          <div className="hero-copy reveal-up">
+            <p className="hero-kicker">Enjoy a crystal-clear pool</p>
+            <h1 className="hero-title text-balance">
+              Fast, friendly, and stress-free pool care by <span className="sos-highlight">SOS</span>.
             </h1>
-            <p className="max-w-2xl text-[1.05rem] leading-7 text-[#35515f]">
-              We handle cleaning, balancing, and maintenance so your pool stays crystal-clear for family days and guest check-ins.
+            <p className="hero-subtitle">
+              From weekly maintenance to emergency cleanup, we keep your pool sparkling, safe, and ready for family weekends and guest stays.
             </p>
-            <ul className="space-y-2 text-[#27414f]">
+            <ul className="space-y-2 text-[#d9ecf3]">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span aria-hidden className="mt-2 size-2 rounded-full bg-[#0c8f88]" />
+                  <span aria-hidden className="mt-2 size-2 rounded-full bg-[#6fe5db]" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <div className="cta-row">
-              <Link href="/booking" className="btn btn-primary">
-                Start Booking Request
+            <div className="cta-row mt-4">
+              <Link href="/contact" className="btn btn-accent">
+                Contact Us
               </Link>
-              <Link href="/services" className="btn btn-secondary">
-                Explore Services
+              <Link href="/services" className="btn btn-ghost-light">
+                Our Services
               </Link>
             </div>
           </div>
 
-          <aside className="hero-card reveal-up delay-1">
-            <h2 className="mb-4 font-serif text-2xl font-semibold">This Week At A Glance</h2>
-            <div className="space-y-3">
-              <div className="stat-row">
-                <span>Next available start</span>
-                <strong>Monday</strong>
-              </div>
-              <div className="stat-row">
-                <span>Service cadence</span>
-                <strong>Weekly / Bi-weekly</strong>
-              </div>
-              <div className="stat-row">
-                <span>Coverage area</span>
-                <strong>Local + nearby zip codes</strong>
-              </div>
-            </div>
-            <p className="mt-4 rounded-xl bg-[#f2fbfa] p-3 text-sm text-[#2e5969]">
-              Fast response for green water, storms, and urgent chemistry corrections.
-            </p>
-            <div className="clarity-meter" aria-label="Water Clarity Meter">
+          <aside className="hero-float-card reveal-up delay-1">
+            <h2 className="mb-3 font-serif text-2xl font-semibold text-[#113646]">Next Open Slot</h2>
+            <p className="text-[#355464]">Saturday morning service window available now.</p>
+            <div className="clarity-meter mt-4" aria-label="Water Clarity Meter">
               <div className="clarity-fill" />
-              <span>Water Clarity Target: 98%</span>
+              <span>Clarity Goal: 98%</span>
             </div>
+            <Link href="/booking" className="btn btn-primary mt-4">
+              Book An Appointment
+            </Link>
           </aside>
         </div>
       </section>
