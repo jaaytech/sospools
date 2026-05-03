@@ -40,7 +40,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <div className="top-strip">
           <div className="site-container top-strip-inner">
-            <p>+1 (754) 316-2012</p>
+            <p>754 316 2012</p>
             <p>sospoolfullservice@gmail.com</p>
             <p>Mon - Fri 9AM - 6PM</p>
           </div>

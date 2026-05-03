@@ -9,7 +9,7 @@ export default function ContactPage() {
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-xl border border-[#dce6ea] bg-[#f6fbfb] p-4">
             <h2 className="mb-2 text-lg font-semibold">Call or Text</h2>
-            <p className="text-[#35515f]">(555) 555-0142</p>
+            <p className="text-[#35515f]">754 316 2012</p>
           </article>
           <article className="rounded-xl border border-[#dce6ea] bg-[#fff8f3] p-4">
             <h2 className="mb-2 text-lg font-semibold">Email</h2>
